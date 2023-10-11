@@ -56,7 +56,7 @@ export const ShoppingCartProvider = ({ children }) => {
         if(searchType === 'BY_CATEGORY'){
             return filteredItemsByCategory(items,searchByCategory)   
         }
-        if(searchType === 'BY_TITLE_CATEGORY'){
+        if(searchType === 'BY_TITLE_AND_CATEGORY'){
             return filteredItemsByCategory(items,searchByCategory).filter(item => item.title.toLowerCase().includes(searchByTitle.toLowerCase()))   
         }
         if(!searchType){
